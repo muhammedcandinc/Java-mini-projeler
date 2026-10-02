@@ -8,7 +8,7 @@ Bu depo, Java programlama dilinin temel kavramlarını öğrenirken geliştirile
 
 * **Java Temelleri** (`public static void main`)
 * **Metotlar ve Parametreler** (`void` ve `return` dönüş türleri)
-* **Kullanıcı Veri Girişi** (`Scanner` sınıfı - `nextLine()` ve `nextInt()`)
+* **Kullanıcı Veri Girişi** (`Scanner` sınıfı - `nextLine()` ve `nextInt()` kullanımı ile `Buffer` yönetimi)
 * **Karar Yapıları** (`if-else` blokları ve matematiksel koşullar)
 
 ---
@@ -36,3 +36,9 @@ Kullanıcının adını ve yaşını alarak 18 yaş şartına göre ehliyet alı
 **Örnek Akış:**
 * Yaş >= 18 ise $\rightarrow$ Ehliyet almaya uygunsunuz. 🚗
 * Yaş < 18 ise $\rightarrow$ Kalan yıl hesaplanarak bilgilendirme yapılır. ⏳
+
+---
+
+## 🪪 Proje 4: Kullanıcı Kimlik Kartı Alıştırması (`KimlikKarti.java`)
+
+Kullanıcıdan sırasıyla adını, yaşını ve en sevdiği programlama dilini alan; `nextInt()` sonrasındaki `nextLine()` akış tuzaklarını çözerek bilgileri ekrana şık bir özet halinde bastıran interaktif bir kart oluşturucusudur.
