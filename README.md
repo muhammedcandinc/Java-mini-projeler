@@ -1,21 +1,3 @@
-# 🎬 Java Mini Projeleri: Sinema Yaş Sınırı Kontrolü
-
-Bu depo, Java programlama dilinde temel kavramları öğrenirken geliştirdiğim bağımsız mini projeleri içermektedir.
-
-## 🛠️ Kullanılan Teknolojiler ve Konular
-* **Java Temelleri** (`public static void main`)
-* **Metotlar ve Parametreler** (`boolean` return tipleri)
-* **Kullanıcı Veri Girişi** (`Scanner` sınıfı)
-* **Karar Yapıları** (`if-else` blokları)
-
-## 💻 Proje Detayı: Sinema Yaş Sınırı Kontrolü
-Kullanıcının girdiği yaşı alarak 18 yaşından büyük olup olmadığını kontrol eden ve filme girip giremeyeceğini ekrana yazdıran basit bir konsol uygulamasıdır.
-
-### Örnek Akış:
-* Yaş >= 18 ise $\rightarrow$ Filme girebilirsiniz! 🍿
-* Yaş < 18 ise $\rightarrow$ Yaşınız yetmiyor. ❌
-
-
 # 🎬 Java Mini Projeleri Koleksiyonu
 
 Bu depo, Java programlama dilinin temel kavramlarını öğrenirken geliştirilen bağımsız mini projeler içerir.
@@ -26,8 +8,8 @@ Bu depo, Java programlama dilinin temel kavramlarını öğrenirken geliştirile
 
 * **Java Temelleri** (`public static void main`)
 * **Metotlar ve Parametreler** (`void` ve `return` dönüş türleri)
-* **Kullanıcı Veri Girişi** (`Scanner` sınıfı)
-* **Karar Yapıları** (`if-else` blokları)
+* **Kullanıcı Veri Girişi** (`Scanner` sınıfı - `nextLine()` ve `nextInt()`)
+* **Karar Yapıları** (`if-else` blokları ve matematiksel koşullar)
 
 ---
 
@@ -45,6 +27,12 @@ Kullanıcının girdiği yaşı alarak 18 yaşından büyük olup olmadığını
 
 Kullanıcıdan vize ve final notlarını alarak özel ağırlıklı hesaplama yapan, geçme/kalma durumunu `if-else` koşullarıyla denetleyen ve kaynak yönetimi (`close()`) içeren bir konsol uygulamasıdır.
 
+---
+
+## 🚗 Proje 3: Ehliyet Kontrol Sistemi (`EhliyetKontrolSistemi.java`)
+
+Kullanıcının adını ve yaşını alarak 18 yaş şartına göre ehliyet alıp alamayacağını hesaplayan, alamıyorsa tam olarak kaç yılı kaldığını ekrana yazdıran interaktif bir konsol uygulamasıdır.
+
 **Örnek Akış:**
-* Vize (%40) ve Final (%60) hesaplaması için özel **`return`** eden metotlar kullanılır.
-* Ortalama ve final notu şartına göre **Geçtiniz / Kaldınız** sonucu ekrana yazdırılır.
+* Yaş >= 18 ise $\rightarrow$ Ehliyet almaya uygunsunuz. 🚗
+* Yaş < 18 ise $\rightarrow$ Kalan yıl hesaplanarak bilgilendirme yapılır. ⏳
