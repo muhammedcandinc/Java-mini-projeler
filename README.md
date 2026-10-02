@@ -7,7 +7,7 @@ Bu depo, Java programlama dilinin temel kavramlarını öğrenirken geliştirile
 ## 🛠️ Kullanılan Teknolojiler ve Konular
 
 * **Java Temelleri** (`public static void main`)
-* **Metotlar ve Parametreler** (`void` ve `return` dönüş türleri)
+* **Metotlar ve Parametreler** (`void` ve `return` dönüş türleri - özellikle `boolean` değer döndüren fonksiyonlar)
 * **Kullanıcı Veri Girişi** (`Scanner` sınıfı - `nextLine()` ve `nextInt()` kullanımı ile `Buffer` yönetimi)
 * **Karar Yapıları** (`if-else` blokları ve matematiksel koşullar)
 
@@ -42,3 +42,9 @@ Kullanıcının adını ve yaşını alarak 18 yaş şartına göre ehliyet alı
 ## 🪪 Proje 4: Kullanıcı Kimlik Kartı Alıştırması (`KimlikKarti.java`)
 
 Kullanıcıdan sırasıyla adını, yaşını ve en sevdiği programlama dilini alan; `nextInt()` sonrasındaki `nextLine()` akış tuzaklarını çözerek bilgileri ekrana şık bir özet halinde bastıran interaktif bir kart oluşturucusudur.
+
+---
+
+## 📚 Proje 5: Kütüphane Ödül-Ceza Mekanizması (`KutuphaneSistemi.java`)
+
+Kullanıcıdan ödünç alınan kitabın iade süresini alan; süreyi kontrol etmek için özel bir **`boolean` metot** (`süresiniri`) kullanan ve yeni kitap alıp alamayacağını mantıksal koşullarla ekrana yansıtan modüler bir konsol uygulamasıdır.
