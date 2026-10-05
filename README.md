@@ -1,50 +1,25 @@
-# 🎬 Java Mini Projeleri Koleksiyonu
+# Java Mini Projeler 🚀
 
-Bu depo, Java programlama dilinin temel kavramlarını öğrenirken geliştirilen bağımsız mini projeler içerir.
+Bu depo, Java öğrenme yolculuğum sırasında geliştirdiğim başlangıç seviyesindeki pratik projelerimi içermektedir. Bu mini projeler; kontrol yapıları, döngüler, diziler ve koşullu ifadeler gibi temel programlama konularına odaklanmaktadır.
 
----
+## 📂 İçerideki Projeler
 
-## 🛠️ Kullanılan Teknolojiler ve Konular
+| Dosya Adı | Açıklama |
+| :--- | :--- |
+| **`DayFinder.java`** *(Gün Bulucu)* | Kullanıcıdan alınan girdi ve `switch-case` yapısını kullanarak haftanın gününü belirleyen bir program. |
+| **`EhliyetKontrolSistemi.java`** | Kullanıcının yaşına bağlı olarak ehliyet alıp alamayacağını kontrol eden uygulama. |
+| **`KimlikKarti.java`** | Kullanıcı etkileşimi ve kimlik kartı bilgilerini işleyen temel uygulama. |
+| **`KutuphaneSistemi.java`** | Kitap takibi için tasarlanmış basit bir kütüphane yönetim simülasyonu. |
+| **`OgrenciNotSistemi.java`** | Öğrenci notlarını ve ortalamalarını hesaplayıp değerlendiren program. |
+| **`SinemaYasKontrol.java`** | Belirli filmler için kullanıcının yaş sınırını karşılayıp karşılamadığını doğrulayan uygulama. |
 
-* **Java Temelleri** (`public static void main`)
-* **Metotlar ve Parametreler** (`void` ve `return` dönüş türleri - özellikle `boolean` değer döndüren fonksiyonlar)
-* **Kullanıcı Veri Girişi** (`Scanner` sınıfı - `nextLine()` ve `nextInt()` kullanımı ile `Buffer` yönetimi)
-* **Karar Yapıları** (`if-else` blokları ve matematiksel koşullar)
+## 🛠️ Kullanılan Teknolojiler
+* **Java (JDK)**
+* **Nesne Yönelimli Programlama (OOP) Temelleri**
+* **Scanner & Kontrol Akış Deyimleri (`if-else`, `switch-case`)**
 
----
-
-## 💻 Proje 1: Sinema Yaş Sınırı Kontrolü (`SinemaYasKontrol.java`)
-
-Kullanıcının girdiği yaşı alarak 18 yaşından büyük olup olmadığını kontrol eden ve filme girip giremeyeceğini ekrana yazdıran basit bir konsol uygulamasıdır.
-
-**Örnek Akış:**
-* Yaş >= 18 ise $\rightarrow$ Filme girebilirsiniz! 🍿
-* Yaş < 18 ise $\rightarrow$ Yaşınız yetmiyor. ❌
-
----
-
-## 🎓 Proje 2: Öğrenci Not Sistemi (`OgrenciNotSistemi.java`)
-
-Kullanıcıdan vize ve final notlarını alarak özel ağırlıklı hesaplama yapan, geçme/kalma durumunu `if-else` koşullarıyla denetleyen ve kaynak yönetimi (`close()`) içeren bir konsol uygulamasıdır.
+## 🎯 Amaç
+Java programlamada sağlam bir temel oluşturmak, algoritmik düşünme becerimi geliştirmek ve öğrenme sürecimi portfolyom için herkese açık bir şekilde belgeselleştirmek.
 
 ---
-
-## 🚗 Proje 3: Ehliyet Kontrol Sistemi (`EhliyetKontrolSistemi.java`)
-
-Kullanıcının adını ve yaşını alarak 18 yaş şartına göre ehliyet alıp alamayacağını hesaplayan, alamıyorsa tam olarak kaç yılı kaldığını ekrana yazdıran interaktif bir konsol uygulamasıdır.
-
-**Örnek Akış:**
-* Yaş >= 18 ise $\rightarrow$ Ehliyet almaya uygunsunuz. 🚗
-* Yaş < 18 ise $\rightarrow$ Kalan yıl hesaplanarak bilgilendirme yapılır. ⏳
-
----
-
-## 🪪 Proje 4: Kullanıcı Kimlik Kartı Alıştırması (`KimlikKarti.java`)
-
-Kullanıcıdan sırasıyla adını, yaşını ve en sevdiği programlama dilini alan; `nextInt()` sonrasındaki `nextLine()` akış tuzaklarını çözerek bilgileri ekrana şık bir özet halinde bastıran interaktif bir kart oluşturucusudur.
-
----
-
-## 📚 Proje 5: Kütüphane Ödül-Ceza Mekanizması (`KutuphaneSistemi.java`)
-
-Kullanıcıdan ödünç alınan kitabın iade süresini alan; süreyi kontrol etmek için özel bir **`boolean` metot** (`süresiniri`) kullanan ve yeni kitap alıp alamayacağını mantıksal koşullarla ekrana yansıtan modüler bir konsol uygulamasıdır.
+*Depoyu inceleyebilir veya kendi projeleriniz için kopyalayabilirsiniz (fork)!*
