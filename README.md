@@ -6,7 +6,7 @@ Bu depo, Java öğrenme yolculuğum sırasında geliştirdiğim başlangıç sev
 
 | Dosya Adı | Açıklama |
 | :--- | :--- |
-| **`DayFinder.java`** *(Gün Bulucu)* | Kullanıcıdan alınan girdi ve `switch-case` yapısını kullanarak haftanın gününü belirleyen bir program. |
+| **`HaftaninGunleri.java`** | Kullanıcıdan alınan girdi ve `switch-case` yapısını kullanarak haftanın gününü belirleyen bir program. |
 | **`EhliyetKontrolSistemi.java`** | Kullanıcının yaşına bağlı olarak ehliyet alıp alamayacağını kontrol eden uygulama. |
 | **`KimlikKarti.java`** | Kullanıcı etkileşimi ve kimlik kartı bilgilerini işleyen temel uygulama. |
 | **`KutuphaneSistemi.java`** | Kitap takibi için tasarlanmış basit bir kütüphane yönetim simülasyonu. |
