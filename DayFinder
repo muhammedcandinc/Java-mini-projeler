@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Haftanıngünleri {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("gün seç :");
+        String gün = input.nextLine();
+
+        switch(gün) {
+            case "pazartesi" : {
+                System.out.println("haftanin 1. günü");
+                break;
+            }
+            case "sali" : {
+                System.out.println("haftanin 2. günü");
+                break;
+            }
+        }
+        
+        input.close();
+    }
+}
