@@ -1,0 +1,104 @@
+import javax.swing.*;
+
+public class HesapMakinesi {
+    public static void main(String[] args){
+
+        // penceremizi açıp boyut ve başlık ekledik x tuşuna basınca durdurması için komut yazdık
+        JFrame pencere = new JFrame();
+        pencere.setTitle("HESAP MAKİNESİ PROGRAMI");
+        pencere.setSize(500 , 500);
+        pencere.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //pencere içine bir panel açalım şimdi namı diğer tepsi
+        JPanel panel = new JPanel();
+        // paneli pencereye ekleyelim 
+        pencere.add(panel);
+
+        //şimdiyse sırasıyla iki tane sayı girin kutusu koyalım ve satır boşlugu ekleyelim
+        JTextField sayi1 = new JTextField(5);
+        JTextField sayi2 = new JTextField(5);
+         JLabel baslık = new JLabel("LÜTFEN İKİ SAYI GİRİNİZ");
+        //şimdi bunları toplamak için topla butonu yazalım
+        JButton topla = new JButton("TOPLAMA İŞLEMİ");
+        JButton çıkart = new JButton("ÇIKARMA İŞLEMİ");
+        JButton çarp = new JButton("ÇARPMA İŞLEMİ");
+        JButton böl = new JButton("BÖLME İŞLEMİ");
+
+        //şimdi hepsini panele ekleyelim
+        panel.add(baslık);
+        panel.add(sayi1);
+        panel.add(sayi2);
+        panel.add(topla);
+        panel.add(çarp);
+        panel.add(böl);
+        panel.add(çıkart);
+        //şimdiyse butonu action ettirelim
+
+        topla.addActionListener(e -> {
+
+            String toplama1 = sayi1.getText();
+            int islem1 = Integer.parseInt(toplama1);
+            String toplama2 = sayi2.getText();
+            int islem2 = Integer.parseInt(toplama2);
+
+            int işlemtoplam = islem1+islem2 ;
+
+            JOptionPane.showMessageDialog(pencere, "işlem sonucu:" + " " + işlemtoplam);
+
+
+
+        });
+
+        çarp.addActionListener(e -> {
+
+            String çarp1 = sayi1.getText();
+            int çarpım1 = Integer.parseInt(çarp1);
+            String çarp2 = sayi2.getText();
+            int çarpım2 = Integer.parseInt(çarp2);
+
+            int çarpmaislemi = çarpım1*çarpım2;
+
+            JOptionPane.showMessageDialog(pencere, "işlem sonucu:" + " " + çarpmaislemi);
+        });
+
+        böl.addActionListener(e -> {
+
+            String bölme1 = sayi1.getText();
+            int böl1 = Integer.parseInt(bölme1);
+            String bölme2 = sayi2.getText();
+            int böl2 = Integer.parseInt(bölme2);
+
+            if(böl2==0){
+                JOptionPane.showMessageDialog(pencere,"TANIMSIZ");
+            }else {
+                int bölmeislemi = böl1/böl2;
+                JOptionPane.showMessageDialog(pencere,"İşlem sonucu:" + " " + bölmeislemi);
+            }
+        });
+
+        çıkart.addActionListener(e -> {
+
+            String çıkart1 = sayi1.getText();
+            int çıkar1 = Integer.parseInt(çıkart1);
+            String çıkart2 = sayi2.getText();
+            int çıkar2 = Integer.parseInt(çıkart2);
+
+            int çıkarmaislemi = çıkar1-çıkar2;
+
+            JOptionPane.showMessageDialog(pencere,"İşlem sonucu:"+" "+ çıkarmaislemi);
+        });
+
+
+
+          //pencerenin açılması için kod yazıyoruz
+            pencere.setVisible(true);
+
+        
+
+
+
+
+
+
+    }
+}
