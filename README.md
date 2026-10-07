@@ -17,8 +17,12 @@ Bu depo, Java öğrenme yolculuğum sırasında geliştirdiğim başlangıç sev
 ### Grafik Arayüz (GUI - Swing) Projeleri
 | Dosya Adı | Açıklama |
 | :--- | :--- |
-| **`YasHesaplama.java`** | Kullanıcının doğum yılını alarak güncel yıla göre yaşını hesaplayan ilk arayüz uygulaması. |
 | **`HesapMakinesi.java`** | İki sayı girişi alabilen, dört işlemi (toplama, çıkarma, çarpma, bölme) butonlarla gerçekleştiren ve hata kontrolü içeren gelişmiş hesap makinesi uygulaması. |
+
+## 📷 Proje Görseli 
+![Hesap Makinesi Arayüzü]
+<img width="362" height="368" alt="Hesap makinesi arayüzü (GUI)" src="https://github.com/user-attachments/assets/31f51862-4243-4148-a4c3-9c54dccf5b11" />
+
 
 ## 🛠️ Kullanılan Teknolojiler
 * **Java (JDK)**
