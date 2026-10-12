@@ -18,18 +18,23 @@ Bu depo, Java öğrenme yolculuğum sırasında geliştirdiğim başlangıç sev
 | Dosya Adı | Açıklama |
 | :--- | :--- |
 | **`HesapMakinesi.java`** | İki sayı girişi alabilen, dört işlemi (toplama, çıkarma, çarpma, bölme) butonlarla gerçekleştiren ve hata kontrolü içeren gelişmiş hesap makinesi uygulaması. |
+| **`RamVerimi.java`** | Kullanıcının yazdığı kod içerisindeki veri tiplerini (`int`, `double`, `String`, `boolean`) analiz ederek tahmini RAM tüketimini bayt cinsinden hesaplayan ve verimlilik raporu sunan masaüstü GUI uygulaması. |
 
-## 📷 Proje Görseli 
-![Hesap Makinesi Arayüzü]
+## 📷 Proje Görselleri 
+
+**Hesap Makinesi Arayüzü:**
 <img width="362" height="368" alt="Hesap makinesi arayüzü (GUI)" src="https://github.com/user-attachments/assets/31f51862-4243-4148-a4c3-9c54dccf5b11" />
+
+**RAM Verim Ölçer Arayüzü:**
+<img alt="RAM Verim Ölçer Arayüzü" src="BURAYA_GITHUB_UCRETSIZ_GORSEL_LINKINI_YAPISTIRIN" />
 
 
 ## 🛠️ Kullanılan Teknolojiler
-* **Java (JDK)**
-* **Java Swing (JFrame, JPanel, JLabel, JTextField, JButton)**
-* **Olay Yönetimi (ActionListener ve Lambda İfadeleri)**
-* **Nesne Yönelimli Programlama (OOP) Temelleri**
-* **Scanner & Kontrol Akış Deyimleri (`if-else`, `switch-case`)**
+- **Java (JDK)**
+- **Java Swing (JFrame, JPanel, JLabel, JTextField, JTextArea, JScrollPane, JSplitPane, JButton)**
+- **Olay Yönetimi (ActionListener ve Lambda İfadeleri)**
+- **Nesne Yönelimli Programlama (OOP) Temelleri**
+- **Scanner & Kontrol Akış Deyimleri (`if-else`, `switch-case`)**
 
 ## 🎯 Amaç
 Java programlamada sağlam bir temel oluşturmak, görsel arayüz geliştirme becerileri kazanmak, algoritmik düşünme yeteneğimi ilerletmek ve öğrenme sürecimi portfolyom için herkese açık bir şekilde belgeselleştirmek.
