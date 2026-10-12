@@ -26,7 +26,8 @@ Bu depo, Java öğrenme yolculuğum sırasında geliştirdiğim başlangıç sev
 <img width="362" height="368" alt="Hesap makinesi arayüzü (GUI)" src="https://github.com/user-attachments/assets/31f51862-4243-4148-a4c3-9c54dccf5b11" />
 
 **RAM Verim Ölçer Arayüzü:**
-<img alt="RAM Verim Ölçer Arayüzü" src="BURAYA_GITHUB_UCRETSIZ_GORSEL_LINKINI_YAPISTIRIN" />
+<img alt="RAM Verim Ölçer Arayüzü" src="<img width="958" height="502" alt="ramverimprogram" src="https://github.com/user-attachments/assets/b3c8bd68-19de-4b05-b6c8-3ce409a28835" />
+" />
 
 
 ## 🛠️ Kullanılan Teknolojiler
