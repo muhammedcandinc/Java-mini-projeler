@@ -1,0 +1,124 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class RamVerimi {
+    public static void main(String[] args){
+        
+        JFrame pencere = new JFrame();
+        //pencereyi açtık.
+        pencere.setTitle("JAVA_RAM_VERİM_ÖLÇER");
+        //pencere başlığını koyduk.
+        pencere.setSize(500, 500);
+        //pencere boyutularını girdik(en,boy)
+        pencere.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //x tuşuna basıldığında pencerenin arka planda çalışmasını durdurmak içindir.
+
+        JPanel solPanel = new JPanel();
+        //ikiye böleceğimiz ekranın sol panelini açtık.
+        solPanel.setBackground(new Color(255, 222, 102));
+        //solpanelin arayüz rengini ayarladık.
+        solPanel.setBorder(BorderFactory.createTitledBorder("KOD ALANI"));
+        //solpanele başlık ekleriz.
+        solPanel.setLayout(new BorderLayout());
+        //arayüzü bileşenlerini bir konteyner içine yerleştirmek için kullanılır. yani pencere panel vb.
+
+        JPanel sağPanel = new JPanel();
+        //penceremizin sağ kısmına ayrı panel açtık.
+        sağPanel.setBackground(new Color(248, 248, 255));
+        //sağpanele arayüz renklendirmesi yaptık.
+        sağPanel.setBorder(BorderFactory.createTitledBorder("ANALİZ ALANI"));
+        //sağpanele başlık ekleriz.
+        sağPanel.setLayout(new BorderLayout());
+
+        JSplitPane ayirici = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,solPanel,sağPanel);
+        //jsplitpane ile pencereyi iki ayır alana böldük.
+        //sağ ve sol panelleri sırasıyla yazmalıyız yoksa sol panel sagda sag panel sol da gözükebilir!!
+        
+         ayirici.setOneTouchExpandable(true);
+         //tek tıkla açma kapama oku ekler.
+         ayirici.setDividerLocation(200);
+         //ayıırıcının konumunu belirledik.
+         ayirici.setResizeWeight(0.5);
+         //pencere tamamen açıldıgında ekranı yarı yarıya böler.
+         pencere.add(ayirici);
+         //ayiricimizi pencereye ekledik.
+
+         JTextArea kodkağidi = new JTextArea();
+         // kod alanı için komut yazdırma yeri yani text meydanı açıyoruz.
+         JScrollPane kağitsigdirici = new JScrollPane(kodkağidi);
+         //bu scrollpane ise komutları yazdıgımızda panelde taşması yerine kaydırma çubuguyla binlerce satır yazmamızı saglar ve textareayı içine sarıyoruz.
+         solPanel.add(kağitsigdirici, BorderLayout.CENTER);
+         //burda ise solpanele ekliyoruz.
+         //ve yerleşim düzeni saglayıcısı ile konumunu belirliyoruz merkeze yani.
+
+         JTextArea analizkağidi = new JTextArea();
+         //yukarda solpanel için yaptıgımızın aynısını sagpanele uyarlıyoruz.
+         JScrollPane kagitsigdirici2 = new JScrollPane(analizkağidi);
+         sağPanel.add(kagitsigdirici2, BorderLayout.CENTER);
+
+          JButton analizlebutonu = new JButton("ANALİZ İÇİN TIKLAYINIZ");
+         //kod alanı bitince analizle butonuna tıklayarak analizleyecek bir buton tasarladık.
+         solPanel.add(analizlebutonu,BorderLayout.SOUTH);
+         //solpanele ekledik butonu.
+         //ve nerede olacağını belirledik south:güney.
+
+         analizlebutonu.addActionListener(e -> {
+            String girdi = kodkağidi.getText();
+            //action butonu gelip sana tıklandıgında parantez içinde ki emirleri sırasıyla uygula demek.
+            //kod alanından alınan textareayı girdi değikenine saklıyoruz burda yani butona tıklayınca bunları alcak saklıcak.
+            
+            // Basitçe kelime aratarak değişken sayılarını buluyoruz
+            int intSayisi = kelimeSay(girdi, "int");
+            int doubleSayisi = kelimeSay(girdi, "double");
+            int stringSayisi = kelimeSay(girdi, "String");
+            int booleanSayisi = kelimeSay(girdi, "boolean");
+
+            // RAM Hesaplamaları (Bayt cinsinden)
+            int intRam = intSayisi * 4;
+            int doubleRam = doubleSayisi * 8;
+            int stringRam = stringSayisi * 16;
+            int booleanRam = booleanSayisi * 1;
+
+            int toplamRam = intRam + doubleRam + stringRam + booleanRam;
+
+            int verim = 100;
+            if(toplamRam > 100) verim = 85;
+            if(toplamRam < 100) verim = 75;
+            //burda verime başta 100 veriyoruz ve verimin 100 den büyük veya küçüklük durumuna göre hesap yaparız.
+
+            String rapor = "====================================\n" +
+                           "      JAVA RAM VERİMLİLİK RAPORU     \n" +
+                           "====================================\n\n" +
+                           " • int kullanimı      : " + intSayisi + " adet (" + intRam + " bayt)\n" +
+                           " • double kullanımı   : " + doubleSayisi + " adet (" + doubleRam + " bayt)\n" +
+                           " • String kullanımı   : " + stringSayisi + " adet (~" + stringRam + " bayt)\n" +
+                           " • boolean kullanımı  : " + booleanSayisi + " adet (" + booleanRam + " bayt)\n\n" +
+                           "------------------------------------\n" +
+                           " TOPLAM RAM TÜKETİMİ  : " + toplamRam + " Bayt\n" +
+                           " VERİMLİLİK ORANI     : %" + verim + "\n" +
+                           " DURUM                : Analiz Başarılı!\n" +
+                           "====================================";
+                           //burda ki \n bir alt satıra geçmeyi sağlar.
+                           analizkağidi.setText(rapor);
+                           //burda ise analiz alanına yazdırıryoz.
+         });
+
+
+           pencere.setVisible(true);
+        //pencerenin ekranımızda görünebilmesi içindir ve tüm kodlamalardan sonra yazılmalıdır.
+
+
+    } public static int kelimeSay(String metin,String aranan){
+
+        int sayac = 0;
+        //kaç tane buldugumuzu saymak için atadık bu degişken.
+        int index = 0;
+        //index metin içinde kaçıncı karakterden aramaya başlıcanı söyleriz.
+        while((index = metin.indexOf(aranan, index)) !=-1){
+            sayac++;
+            index += aranan.length();
+        }
+        return sayac;
+
+    }
+}
